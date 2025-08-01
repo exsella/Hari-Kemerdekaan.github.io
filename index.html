@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERDEKA! Peringatan 17 Agustus</title>
+    <link rel="stylesheet" href="stlyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript">
+        return;
+
+        function validasiEmail(event) {
+            event.preventDefault();
+
+            let email = document.getElementById("email").value.trim();
+
+            if (email === "") {
+                alert("Email tidak boleh kosong!");
+                return;
+            }
+
+            let regex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!regex.test(email)) {
+                alert("Format email tidak valid!");
+
+            }
+
+            let yakin = confirm("Apakah kamu yakin form sudah benar?");
+            if (yakin) {
+                alert("Form berhasil dikirim!");
+                window.location.href = "index.html";
+            } else {
+                alert("Silakan periksa kembali email kamu.");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header id="beranda" class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Logo_Resmi_Peringatan_Ri_80_Hari_Kemerdekaan_Indonesia_17_Agustus_2025_17_Agustus__Logo_Resmi_Hut_Ri_80__17_Agustus__Hari_Kemerdekaan_Indonesia_2025_PNG_dan_Vektor_dengan_Background_Transparan_untuk_U.png" alt="Logo Kemerdekaan">
+                <span>MERDEKA!</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#acara">Acara</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#daftar">Daftar</a></li>
+                <li class="login-button">
+                    <a href="#beranda" id="openBeranda">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>PERINGATAN KEMERDEKAAN REPUBLIK INDONESIA KE-80</h1>
+            <p>Kobarkan Semangat Persatuan dan Kesatuan!</p>
+            <h3 class="quote">"Semangat kemerdekaan adalah api yang tak pernah padam. Mari kita teruskan perjuangan para pahlawan dengan karya nyata!"</h3>
+            <div class="hero-buttons">
+                <a href="#daftar" class="btn primary">Ikuti Kemeriahan</a>
+                <a href="#acara" class="btn secondary">Lihat Jadwal</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="acara" class="section discover-world">
+        <div class="container">
+            <div class="discover-text">
+                <h2 class="animate-text">BUKA LEMBAR BARU </h2>
+                <p class="animated-paragraph">
+                    Mari bersama-sama merayakan Hari Kemerdekaan Republik Indonesia yang ke-80 dengan penuh semangat dan kebanggaan. Ikuti berbagai acara dan perlombaan yang telah kami siapkan untuk memeriahkan hari bersejarah ini. Rasakan kembali semangat perjuangan para
+                    pahlawan dan perkuat rasa cinta tanah air. Bergabunglah dalam kegembiraan dan ciptakan kenangan indah di hari kemerdekaan ini!
+                </p>
+                <div class="stats">
+                    <span>Upacara Bendera</span>
+                    <span>Aneka Perlombaan Tradisional</span>
+                    <span>Malam Tirakatan</span>
+                    <span>Panggung Hiburan</span>
+                    <span>Doa Syukur Kemerdekaan</span>
+                </div>
+            </div>
+            <div class="discover-image">
+                <img src="40x60.jfif" alt="Pengibaran Bendera Merah Putih">
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="section gallery">
+        <div class="container">
+            <h2>GALERI KEMERDEKAAN</h2>
+
+            <div class="gallery-grid">
+                <img class="animate-on-scroll" src="5 Ide Lomba 17 Agustus Seru untuk Anak.jfif" alt="Lomba Makan Kerupuk">
+                <img class="animate-on-scroll" src="PANJAT PINANG.jfif" alt="Panjat Pinang">
+                <img class="animate-on-scroll" src="⛔ BERBAGAI MACAM CARA WARGA SAMBUT KEMERDEKAAN RI KE 78.jfif" alt="Pawai Kemerdekaan">
+                <img class="animate-on-scroll" src="Perayaan 17 Agustus di Jayapura Meriah.jfif" alt="Upacara Bendera">
+                <img class="animate-on-scroll" src="Lomba Balap Karung ; Perayaan Kemerdekaan Indonesia.jfif" alt="Berbagai Lomba">
+                <img class="animate-on-scroll" src="Kejawen, the Religion of Java.jfif" alt="Perayaan Masyarakat">
+                <img class="animate-on-scroll" src="Arti Lomba-lomba Saat Perayaan Kemerdekaan.jfif" alt="Atraksi Kemerdekaan"> <img class="animate-on-scroll" src="download (21).jfif" alt="Atraksi Kemerdekaan">
+                <img class="animate-on-scroll" src="seni bantengan malang.jfif" alt="Perayaan Masyarakat">
+                <img class="animate-on-scroll" src="Running In Jakarta On A Car Free Day - Hot, Tough, But Fun.jfif" alt="Perayaan Masyarakat">
+            </div>
+            <!-- <form action="https://www.youtube.com/watch?v=quE7Ghu-PAM">
+                <button class="btn load-more">Klik Vidio</button>
+            </form> -->
+            <form>
+                <button class="btn load-more"><a href="https://www.youtube.com/watch?v=quE7Ghu-PAM" style="color: white; text-decoration: none;" target="_blank" class="youtube-link">Klik Video</a></button><br><br>
+            </form>
+        </div>
+    </section>
+
+    <section id="daftar" class="section register-form">
+        <div class="container">
+            <h2>DAFTAR LOMBA 17 AGUSTUS</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Masukkan Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="nisn">No Telpon:</label>
+                    <input type="text" id="nisn" name="nisn" placeholder="Masukkan No Telpon" required>
+                </div>
+                <div class="form-group">
+                    <label for="lomba">Pilih Lomba:</label>
+                    <select id="lomba" name="lomba" required>
+                        <option value="">-- Pilih Lomba --</option>
+                        <option value="balap-karung">Balap Karung</option>
+                        <option value="panjat-pinang">Panjat Pinang</option>
+                        <option value="makan-kerupuk">Makan Kerupuk</option>
+                        <option value="tarik-tambang">Tarik Tambang</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="usia">Usia:</label>
+                    <input type="number" id="usia" name="usia" placeholder="Masukkan Usia Anda (Tahun)" min="5" max="99" required>
+                </div>
+                <button type="submit" class="btn primary" onclick="validasiEmail(event)">Kirim Pendaftaran</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Logo_Resmi_Peringatan_Ri_80_Hari_Kemerdekaan_Indonesia_17_Agustus_2025_17_Agustus__Logo_Resmi_Hut_Ri_80__17_Agustus__Hari_Kemerdekaan_Indonesia_2025_PNG_dan_Vektor_dengan_Background_Transparan_untuk_U.png" alt="Bendera Indonesia">
+                <span>MERDEKA!</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="Twitter_-_Social_Media_Apps_Logo_-_Free_Transparent_PNG_Download_-_PNGkey-removebg-preview.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="login-form-container">
+                <div class="form-header">
+                    <h2>Login</h2>
+                    <p>Masukkan akun Anda</p>
+                </div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" placeholder="Password Anda" required>
+                    </div>
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" id="remember-me"> Ingat Saya
+                        </label>
+                        <a href="#">Lupa Password?</a>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Masuk</button>
+                    <p class="register-link">Belum punya akun? <a href="#">Daftar</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
